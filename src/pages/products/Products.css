@@ -1,0 +1,96 @@
+.show-category .container{margin: 80px 95px; }
+.box{ 
+    width: 23%;
+    min-width: 230px;
+    padding: 10px 12px;
+    border: 1px solid #666666;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgb(0 0 0 / 2%);
+    margin: 20px ;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.show-category h1{
+    text-align: center;
+}
+.heading{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;}
+ .row .heading  .box h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 54px;
+}
+
+.box:hover{
+    /* transform: translateY(-5px); */
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+    border:none;
+      transform: scale(1.1); 
+    }
+ 
+/* .col-md-12{  
+      display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} */
+.box img{
+    width: 100%;
+    border-radius: 10px;
+    height: 50%;
+}
+.box h2{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+.box .text{
+    text-align: center;
+    margin: 15px 0;
+}
+.row .heading .box p{
+    margin: 10px 0;
+    overflow-wrap: anywhere;
+}
+/* .box span{
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 15px;
+} */
+.box button{
+    color: white;
+    width: 60%;
+    padding: 5px;
+    background: #0e0d0d;
+    font-size: 19px;
+    border-radius: 5%;
+   
+}
+.box button:hover{background-color: #e8e8e8; border: none; color: #0e0d0d;font-size: 19px;}
+@media screen and (max-width: 800px){
+    .show-category .container{margin: 80px; }
+
+    .gallerybox{padding: 40px 40px;}
+   .container .row .col-md-12 { justify-content: center;}
+   .container .row{display: flex;}
+   .box{ width: 80%;    justify-content: space-around;}
+   .box h2{margin: 0;}
+   .box:hover{transform: none; }
+   .box .text{margin: 0; text-align: center;}
+   .box button{width: 35%; margin-top: -50px;}
+
+}
+@media screen and (max-width: 477px){
+    .show-category .container{margin: 0px ; }
+    .heading h2{ font-size: 10px;}
+    .heading p{display: none;}
+    .box button{width: 46%; margin-top: -20px;}
+    .box:hover{transform: none; }
+}

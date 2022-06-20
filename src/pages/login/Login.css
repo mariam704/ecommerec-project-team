@@ -1,0 +1,59 @@
+.login{
+    display: flex;
+    margin: 10% 15% 10% 15%;
+    /* height: 60vh; */ 
+}
+.login .form-log{
+    width: 50%;
+    color: #e9e5e2;
+    background-image: linear-gradient(to right, rgb(35 39 40),rgb(0 0 0));
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 10px #777;
+    border: 1px solid #777;
+   
+}
+.login .form-log form span{display: block; margin-bottom: 5px;}
+.login .form-log form{  margin: 25px; border-radius: 8px;}
+.login .form-log .formControl{display: flex;flex-direction: column;}
+.login .form-log form label{margin-bottom: 5px;}
+.login .form-log form input{
+    background-color: white;
+    padding: 6px;
+    margin: 0 0 12px 0;
+}
+.login .cart-log{
+    box-shadow: 0px 0px 10px #777;
+    background-size: cover;
+    width: 40%;
+    background-image: url("./imgg/ban5.jpg");
+    background-position: top;
+    margin: 0 0 0 10px;
+}
+
+@media (max-width: 800px){
+    .login{height: 50vh;}
+    .login .form-log{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+                .login form .form-log .formControl{
+                    display: inline-table;
+                        width: 50%;
+                          
+                }
+}
+@media (max-width: 474px){
+    .login .cart-log{display: none;}
+    .login{height: 50vh;}
+    .login .form-log{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .login .form-log form{margin: 5px;}
+    .login form .form-log .formControl{ display: inline-table;width: 50%;}
+    .login form  button{margin: 1px;}
+
+}
